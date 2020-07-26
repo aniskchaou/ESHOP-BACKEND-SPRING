@@ -1,5 +1,7 @@
 package fr.uha.anis.entities;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -25,7 +27,7 @@ public class Category {
 	private String categorieName;
 	
 	@OneToMany(cascade = CascadeType.ALL,mappedBy="category")
-	private Set<Product> products;
+	private List<Product> products=new ArrayList();
 
 	public Long getId() {
 		return id;
@@ -43,19 +45,22 @@ public class Category {
 		this.categorieName = categorieName;
 	}
 
-	public Set<Product> getProducts() {
+	public List<Product> getProducts() {
 		return products;
 	}
 
-	public void setProducts(Set<Product> products) {
+	public void setProducts(List<Product> products) {
 		this.products = products;
 	}
-
-	public Category(Long id, String categorieName, Set<Product> products) {
-		super();
+    
+	public Category() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Category(Long id, String categorieName) {
 		this.id = id;
 		this.categorieName = categorieName;
-		this.products = products;
+		
 	}
 	
 	

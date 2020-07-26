@@ -33,7 +33,7 @@ public class Product {
 	private String description;
     
     @Column(name="unitPrice")
-	private BigDecimal unitPrice;
+	private double unitPrice;
     
     @Column(name="imageUrl")
 	private String imageUrl;
@@ -86,11 +86,11 @@ public class Product {
 		this.description = description;
 	}
 
-	public BigDecimal getUnitPrice() {
+	public double getUnitPrice() {
 		return unitPrice;
 	}
 
-	public void setUnitPrice(BigDecimal unitPrice) {
+	public void setUnitPrice(double unitPrice) {
 		this.unitPrice = unitPrice;
 	}
 
@@ -145,15 +145,16 @@ public class Product {
     public Product() {
 		// TODO Auto-generated constructor stub
 	}
+    
 
-	public Product(Long id, String sku, String name, String description, BigDecimal unitPrice, String imageUrl,
+	public Product(Long id, String sku, String name, String description, double d, String imageUrl,
 			boolean active, int unitsInstock, Date dateCreated, Date lastUpdated, Category category) {
 		super();
 		this.id = id;
 		this.sku = sku;
 		this.name = name;
 		this.description = description;
-		this.unitPrice = unitPrice;
+		this.unitPrice = d;
 		this.imageUrl = imageUrl;
 		this.active = active;
 		this.unitsInstock = unitsInstock;
