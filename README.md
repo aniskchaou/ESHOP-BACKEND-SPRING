@@ -1,62 +1,40 @@
+# ShopCart
+ShopCart is an e-commerce web application for selling products online.
+
+## Informations:
+Status: under development
+Lastest version 1.0
+Sector: ecommerce
+Created: September 2020
+Last updated: September 2020
+
+
+## Screenshot
 <p align="center">
-<img  src="screenshots/logo.png"/>
+<img src="intro.jpg" />
 </p>
-
-
-
-## Introduction
-
-Shop Cart is an e-Commerce web application for an online digital goods store.
-
-## Informations
--   Status: under development
--   Version: 1.0
--   Sector: industry
--   Created: November 2020
--   Last updated: December 2020
-
-## Table of contents
-* [Documentation](#general-info)
-* [Demo](#demo)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Contact](#contact)
-* [License](#license)
-
-## Documentation
-https://github.com/aniskchaou/STOCKBAY-FRONTEND-ADMIN/wiki
-
-## Demo
-https://stock-bay.herokuapp.com/
-
-## Screenshots
-<p align="center">
-<img  src="screenshots/screenshot.png"/>
-<p>
-
-## Technologies
-* Spring boot
-* Angular
-
-
-## Setup
+<br>
 
 
 ## Features
- -  Select products by category
--   View the product details
--   Add a product to the cart
--   Manage cart
--   Search for products
--   Check out the product
 
-  
+ - Select products by category
+ - View the product details
+ - Add a product to the cart
+ - Manage cart
+ - Search for products
+ - Check out the product
 
-## Contact
-contact@delta-dev-software.com
+## Architecture
+<p align="center">
+<img src="architecture.png" />
+</p>
+<br>
 
-## License
-<a href="license.txt">MIT License</a>
+
+## Technologies
+
+Spring boot, Angular, Bootstrap, PostgresSQL
+
+## Back end
+https://github.com/aniskchaou/ECOMMERCE-BACKEND-SPRING
